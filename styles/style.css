@@ -1,3 +1,8 @@
+/* УДАЛИТЬ!! */
+* {
+  border: 1px solid red;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -10,11 +15,80 @@
 }
 
 .header {
+  display: flex;
+  position: relative; /*????*/
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  align-items:center;
+  /* justify-content: flex-end; */
 }
+
+.header__title {
+  height: fit-content;
+  width: 730px;
+  margin-left: 64px;
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+}
+
+.header__subtitle {
+  width: 388px;
+  height: fit-content;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+.logo {
+  height: 32px;
+  width: 228px;
+}
+
+.logo_place_header {
+  position:absolute;
+  top: 30px;
+  left: 64px;
+  /* margin:30px 0 0 64px; */
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {

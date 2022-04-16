@@ -1,15 +1,3 @@
-/* TODO: */
-/* - сбросить отступы  */
-
-
-/* УДАЛИТЬ!! */
-/* * {
-  border: 1px solid red;
-} */
-
-/* УДАЛИТЬ!! */
-
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -24,7 +12,6 @@
 .header {
   display: flex;
   position: relative;
-  /*????*/
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -81,7 +68,6 @@
   position: absolute;
   top: 30px;
   left: 64px;
-  /* margin:30px 0 0 64px; */
   z-index: 1;
 }
 
@@ -94,7 +80,6 @@
   display: flex;
   width: 80%;
   justify-content: space-between;
-  /* margin: 100px 0 100px 0; */
 }
 
 
@@ -375,17 +360,3 @@
   text-decoration: none;
   margin: 0;
 }
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-/* .header__square-pic {
-  height: 568px;
-  width: 568px;
-} */
-
-/* и элемента с модификатором вида ключ-значение */
-/* .table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-} */

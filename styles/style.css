@@ -3,9 +3,9 @@
 
 
 /* УДАЛИТЬ!! */
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 /* УДАЛИТЬ!! */
 
@@ -94,7 +94,7 @@
   display: flex;
   width: 80%;
   justify-content: space-between;
-  margin: 100px 0 100px 0;
+  /* margin: 100px 0 100px 0; */
 }
 
 
@@ -213,18 +213,21 @@
 
 .page__digits {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .feynman {
+  box-sizing: border-box;
   position: relative;
   height: 890px;
   background-color: #f2f2f2;
+  padding: 100px 0 0 0;
 }
 
 .feynman__title {
   position: relative;
   width: 648px;
-  margin: 100px auto;
+  margin: auto;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -247,6 +250,7 @@
   right: 48px;
   line-height: 51px;
   font-size: 36px;
+  text-decoration: none;
 }
 
 .feynman__image {
@@ -256,10 +260,6 @@
   width: 867px;
   height: 637px;
   z-index: 1;
-}
-
-.page__feynman {
-  margin-top: 100px;
 }
 
 .kaufman {
@@ -293,7 +293,7 @@
 .table_theme_dark {
   color: white;
   margin-bottom: 90px;
-  
+
 }
 
 .table__cell_theme_dark {
@@ -307,22 +307,23 @@
   min-height: 350px;
 }
 
-.footer__column {
-  flex-basis: 711px;
-}
-
 .footer__columns {
   display: flex;
   flex-grow: 1;
   margin: 60px 0 40px 0;
-  justify-content: center;
+  justify-content: space-around;
   width: 90%;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  flex-direction: column;
   justify-content: space-between;
+  flex-basis: 711px;
 }
 
 .logo_place_footer {
@@ -338,13 +339,42 @@
   display: flex;
 }
 
-.footer__column_content_social {}
+.footer__column_content_social {
+  display: flex;
+}
+
+.footer__column-heading {
+  margin: 0 0 20px 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white
+}
+
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 0 0;
+}
+
 .footer__column-links {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 16px 0;
   padding: 0;
   list-style-type: none;
   list-style-position: outside;
 }
 
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 /* .header__square-pic {

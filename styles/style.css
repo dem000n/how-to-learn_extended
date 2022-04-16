@@ -9,10 +9,6 @@
 
 /* УДАЛИТЬ!! */
 
-/* p, h1, h2 {
-  margin:0;
-  padding:0;
-} */
 
 .page {
   min-width: 1100px;
@@ -137,11 +133,6 @@
   font-weight: bold;
 }
 
-.digits {
-  /* display:flex;
-  justify-content: center */
-}
-
 .section-title {
   width: 60%;
   margin: auto;
@@ -168,14 +159,18 @@
 }
 
 .table {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
   margin: auto;
+  z-index: 1;
 }
 
-.table__cell {
+
+.table__cell_theme_light {
+  margin-top: 60px;
   width: 250px;
 }
 
@@ -189,11 +184,23 @@
 .table__cell-text {
   line-height: 1.2;
   font-size: 18px;
+  margin: 0;
+}
+
+.table__cell-text_theme_light {
   margin: 0 0 20px 0;
 }
 
 .table__cell-sign {
   margin: 0;
+}
+
+.section-title_theme_light {
+  margin-top: 100px;
+}
+
+.section-subtitle_theme_light {
+  margin-top: 20px;
 }
 
 .digits__cell {
@@ -256,49 +263,70 @@
 }
 
 .kaufman {
+  position: relative;
   background-color: #1f1f1f;
+  overflow: hidden;
 }
 
-.kaufman__section-title {
-  margin-top: 90px;
-}
-
-.kaufman__section-subtitle {
-  margin-top: 20px;
+.kaufman__triangle {
+  position: absolute;
+  right: -210px;
+  top: 0;
+  width: 877px;
+  height: 877px;
 }
 
 .section-title_theme_dark {
-color: white;
+  position: relative;
+  margin-top: 90px;
+  color: white;
+  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
-color: white;
+  position: relative;
+  margin-top: 20px;
+  color: white;
+  z-index: 1;
 }
 
 .table_theme_dark {
   color: white;
+  margin-bottom: 90px;
+  
 }
 
 .table__cell_theme_dark {
+  margin-top: 80px;
   width: 200px;
 }
 
+.footer__columns {
 
+}
 
+.footer__column_content_copyright {
 
+}
 
+.footer__column_content_info {
+
+}
+
+.footer__column_content_social {}
+.logo_place_footer {}
 
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
+/* .header__square-pic {
   height: 568px;
   width: 568px;
-}
+} */
 
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+/* .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
-}
+} */

@@ -9,10 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-* {
-  border: 1px solid red;
-}
-
 .header {
   display: flex;
   position: relative;
@@ -81,7 +77,7 @@
 }
 
 .description {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   display: flex;
   justify-content: center;
   box-sizing: border-box;

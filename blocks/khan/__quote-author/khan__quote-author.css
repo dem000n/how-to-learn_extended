@@ -1,7 +1,6 @@
-.cards__title {
-    margin-bottom: 16px;
+.khan__quote-author {
+    margin: 0 0 10px 0;
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
 }

@@ -278,9 +278,13 @@
 
 
       <label>
-        <input class="invisible-feedback-button" type="checkbox">
-        <div class="feedback-form"></div>
-        <span class="visible-feedback-button"></span>
+        <input class="feedback__button_invisible" type="checkbox">
+        <form class="feedback__form" action="mailto: rghti@yandex.ru" method="POST" enctype="text/plain">
+          <label class="feedback__text-label" for="feedback-text">Напишите ваш отзыв</label>
+          <textarea class="feedback__text" name="body" id="feedback-text" placeholder="Ваш отзыв здесь" required></textarea>
+          <input class="feedback__submit-btn" type="submit" value="Send">
+        </form>
+        <span class="feedback__button_visible opacity"></span>
     </label>
 
     </section>

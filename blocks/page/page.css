@@ -7,16 +7,42 @@
     margin: 0 auto;
     /* выше для экранов больше 1600px отцентрировали весь контент */
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    position: relative;
   }
 
-.feedback-button {
+.invisible-feedback-button {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  height: 60px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  }
+
+.visible-feedback-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
   width: 60px;
+  height: 60px;
   border: 3px solid #1f1f1f;
   border-radius: 50%;
   background: no-repeat center/80% url(../../images/icon/message.svg) white;
+
+}
+
+.feedback-form {
+  min-width: 600px;
+  min-height: 300px;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  background-color: yellowgreen;
+  z-index: 999;
+  transition: transform 0.5s ease-out;
+}
+
+.invisible-feedback-button:checked + .feedback-form {
+  transform: translateX(-600px);
+  /* transition: transform 0.5s ease-out; */
 }

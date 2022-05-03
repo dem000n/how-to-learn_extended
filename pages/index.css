@@ -75,3 +75,12 @@
 @import url(../blocks/resources/__logo/resources__logo.css);
 @import url(../blocks/resources/__logo-zone/resources__logo-zone.css);
 @import url(../blocks/opacity/opacity.css);
+
+@import url(../blocks/feedback/feedback.css);
+@import url(../blocks/feedback/__button/feedback__button.css);
+@import url(../blocks/feedback/__button/_invisible/feedback__button_invisible.css);
+@import url(../blocks/feedback/__button/_visible/feedback__button_visible.css);
+@import url(../blocks/feedback/__form/feedback__form/feedback__form.css);
+@import url(../blocks/feedback/__submit-btn/feedback__submit-btn.css);
+@import url(../blocks/feedback/__text/feedback__text.css);
+@import url(../blocks/feedback/__text-label/feedback__text-label.css);
